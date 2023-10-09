@@ -1,12 +1,11 @@
 {
     "name": "alessio-ferretti/livewire-ticket",
-    "description": ":package_description",
+    "description": ":Mini issue ticket panel in livewire",
     "license": "MIT",
     "authors": [
         {
-            "name": "Author Name",
-            "email": "author@email.com",
-            "homepage": "http://author.com"
+            "name": "Alessio Ferretti"
+
         }
     ],
     "homepage": "https://github.com/alessio-ferretti/livewire-ticket",
