@@ -1,0 +1,42 @@
+{
+    "name": "alessio-ferretti/livewire-ticket",
+    "description": ":package_description",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Author Name",
+            "email": "author@email.com",
+            "homepage": "http://author.com"
+        }
+    ],
+    "homepage": "https://github.com/alessio-ferretti/livewire-ticket",
+    "keywords": ["Laravel", "LivewireTicket"],
+    "require": {
+        "livewire/livewire": "^2.4",
+        "rappasoft/laravel-livewire-tables": "^2.15"
+
+    },
+    "require-dev": {
+
+    },
+    "autoload": {
+        "psr-4": {
+            "AlessioFerretti\\LivewireTicket\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "AlessioFerretti\\LivewireTicket\\Tests\\": "tests"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "AlessioFerretti\\LivewireTicket\\LivewireTicketServiceProvider"
+            ],
+            "aliases": {
+                "LivewireTicket": "AlessioFerretti\\LivewireTicket\\Facades\\LivewireTicket"
+            }
+        }
+    }
+}
