@@ -11,6 +11,7 @@
     "homepage": "https://github.com/alessio-ferretti/livewire-ticket",
     "keywords": ["Laravel", "LivewireTicket"],
     "require": {
+        "php": ">=8.1",
         "livewire/livewire": "^2.4",
         "rappasoft/laravel-livewire-tables": "^2.15"
 
