@@ -2,6 +2,7 @@
 
 namespace AlessioFerretti\LivewireTicket;
 
+use AlessioFerretti\LivewireTicket\Livewire\LivewireTicketManage;
 use AlessioFerretti\LivewireTicket\Livewire\LivewireTicketNew;
 use AlessioFerretti\LivewireTicket\Livewire\LtTicketTable;
 use Illuminate\Support\ServiceProvider;
@@ -17,6 +18,7 @@ class LivewireTicketServiceProvider extends ServiceProvider
     public function boot(): void
     {
         Livewire::component('lt-new', LivewireTicketNew::class);
+        Livewire::component('lt-manage', LivewireTicketManage::class);
         Livewire::component('lt-table', LtTicketTable::class);
         // $this->loadTranslationsFrom(__DIR__.'/../resources/lang', 'alessio-ferretti');
          $this->loadViewsFrom(__DIR__.'/../resources/views', 'alessio-ferretti');

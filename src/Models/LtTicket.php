@@ -16,4 +16,8 @@ class LtTicket extends Model
         'lt_type_id',
         'lt_state_id'
     ];
+
+    public function lt_comments(){
+        return $this->hasMany(LtComment::class);
+    }
 }
