@@ -3,8 +3,8 @@
 return [
     //
     'lt_state'=>[
-        1=>"Opened",
-        10=>"Closed"
+        1=>['state'=>"Opened",'color'=>'#fca903'],
+        10=>['state'=>"Closed",'color'=>'#098522'],
     ],
 
     'lt_type'=>[

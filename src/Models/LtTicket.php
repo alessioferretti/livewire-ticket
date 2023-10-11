@@ -20,4 +20,7 @@ class LtTicket extends Model
     public function lt_comments(){
         return $this->hasMany(LtComment::class);
     }
+    public function lt_logs(){
+        return $this->hasMany(LtLog::class);
+    }
 }
