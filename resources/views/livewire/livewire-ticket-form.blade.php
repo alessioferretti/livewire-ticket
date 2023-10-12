@@ -9,6 +9,11 @@
     </div>
 
     @else
+        @if($lt->user->email)
+            <div class="mb-3">
+                Created by <b>{{ $lt->user->email }}</b>
+            </div>
+        @endif
     <div class="mb-3">
         <label for="subject" class="form-label">Subject</label>
         <input type="text" class="form-control" id="subject" placeholder="Subject of ticket" wire:model="lt.subject">

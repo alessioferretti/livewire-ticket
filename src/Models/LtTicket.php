@@ -2,6 +2,7 @@
 
 namespace AlessioFerretti\LivewireTicket\Models;
 
+use App\Models\User;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
@@ -22,5 +23,12 @@ class LtTicket extends Model
     }
     public function lt_logs(){
         return $this->hasMany(LtLog::class);
+    }
+
+    public function user(){
+        return $this->belongsTo(User::class);
+    }
+    public function assigned_to(){
+        return $this->belongsTo(User::class,'assigned_to');
     }
 }

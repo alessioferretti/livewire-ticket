@@ -16,6 +16,7 @@ return new class extends Migration
             $table->text('subject');
             $table->text('description');
             $table->unsignedInteger('user_id');
+            $table->unsignedInteger('assigned_to')->nullable();
             $table->unsignedInteger('lt_type_id')->default(1);
             $table->unsignedInteger('lt_state_id')->default(1);
             $table->text('referrer')->default(1);
