@@ -13,9 +13,40 @@ Via Composer
 
 ``` bash
 $ composer require alessio-ferretti/livewire-ticket
+$ php artisan migrate
+
 ```
 
 ## Usage
+
+### Bootstrap 5 and Alpinejs
+
+This package require bootstrap library
+
+https://getbootstrap.com/docs/5.2/getting-started/introduction/
+
+And for livewire datatable ( https://github.com/rappasoft/laravel-livewire-tables ) you need to include in your page
+``` html
+<script src="//unpkg.com/alpinejs" defer></script>
+```
+
+### Livewire directive
+Add the Livewire directive to your template to include the single componente
+``` php
+<html>
+<body>
+.....
+@livewire('lt-new',['user_id' => 1])
+
+@livewire('lt-manage',['user_id' => 1,'lt_ticket_id' => 1])
+
+@livewire('lt-table',['theme'=>"bootstrap-5",'editRouteName'=>'hello'])
+
+
+</body>
+</html>
+```
+
 
 ## Change log
 
