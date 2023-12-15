@@ -8,7 +8,7 @@
 
         }
     ],
-    "homepage": "https://github.com/alessio-ferretti/livewire-ticket",
+    "homepage": "https://github.com/alessioferretti/livewire-ticket",
     "keywords": ["Laravel", "LivewireTicket"],
     "require": {
         "php": ">=8.1",
